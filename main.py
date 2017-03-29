@@ -2,12 +2,10 @@
 # I use the built in numpy.linalg.solve function to solve the resulting normal equations, resulting in $a, b$
 # which determines the linear model $Y = ax + b$
 
-from sklearn import datasets
 import numpy as np
 
 dataset1 = np.array([[1.15, 1.10], [0.39, 0.41], [3.59, 3.36], [2.10, 2.03], [1.68, 1.80], [4.29, 4.11], [3.85, 3.50]])
 n = len(dataset1)
-(data, target) = datasets.load_boston()
 
 # Calculate coefficients for normal equations based on dataset
 u = 0
