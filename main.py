@@ -1,9 +1,14 @@
+## Author: Francisco Chima Sanchez
+## Created: 2016-03-10
+## Last Modified: 2017-04-05
+
 # This script demonstrates the use of discrete least squares approximation on a small dataset of ${x_i,y_i}$ values
 # I use the built in numpy.linalg.solve function to solve the resulting normal equations, resulting in $a, b$
 # which determines the linear model $Y = ax + b$
 
 import numpy as np
 
+# Initialize dataset for linear regression
 dataset1 = np.array([[1.15, 1.10], [0.39, 0.41], [3.59, 3.36], [2.10, 2.03], [1.68, 1.80], [4.29, 4.11], [3.85, 3.50]])
 n = len(dataset1)
 
